@@ -32,13 +32,13 @@ NEW_THEME=${THEMES[$INDEX]}
 echo "Switching to theme: $NEW_THEME"
 
 # Safe replace (only profile card line)
-sed -i "s|card/nayandas69?theme=[^\"]*|card/nayandas69?theme=$NEW_THEME|g" $README
+sed -i "s|card/taniyachatterjeegit?theme=[^\"]*|card/taniyachatterjeegit?theme=$NEW_THEME|g" $README
 
 NEXT_INDEX=$(( (INDEX + 1) % TOTAL ))
 echo $NEXT_INDEX > $INDEX_FILE
 
-git config user.name "nayandas69"
-git config user.email "174907517+nayandas69@users.noreply.github.com"
+git config user.name "taniyachatterjeegit"
+git config user.email "273017344+taniyachatterjeegit@users.noreply.github.com"
 
 git pull --rebase origin main || true
 git add .
